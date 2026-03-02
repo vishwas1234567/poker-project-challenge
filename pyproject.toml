@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probability-games"
+version = "1.0.0"
+description = "Interactive probability games and Monte Carlo simulations"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Community Contributors", email = "opensource@example.com"}
+]
+keywords = ["probability", "simulation", "monte-carlo", "poker", "monty-hall", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/probability-games"
+Documentation = "https://github.com/yourusername/probability-games/wiki"
+Repository = "https://github.com/yourusername/probability-games.git"
+"Bug Reports" = "https://github.com/yourusername/probability-games/issues"
+
+[project.scripts]
+probability-games = "probability_games.cli:main"
+
+[tool.setuptools]
+packages = ["probability_games", "probability_games.games"]
